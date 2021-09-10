@@ -57,3 +57,74 @@
   align-items: center;
   color: #FFF;
 }
+
+.book-content-item {
+  background-color: #FFF;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  
+  gap: 40px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-size: 32px;
+  color: #0B1A72;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.book-price {
+  font-size: 28px;
+  color: #000;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.book-description {
+  font-size: 12px;
+  text-align: justify;
+  color: #6c6a69;
+}
+
+.button-add-cart {
+  border: 0;
+  background-color: #0B1A72;
+  border-radius: 5px;
+  padding: 10px;
+  color: #FFF;
+  font-weight: bold;
+  margin: 5px;
+  align-self: center;
+}
+
+
+.table-cart {
+  width: 100%;
+  background: #FFF;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.table-cart thead, th {
+  color: #999;
+  text-align: left;
+  padding: 12px;
+}
+
+.table-cart tbody, th {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.table-image {
+  height: 100px;
+}
+

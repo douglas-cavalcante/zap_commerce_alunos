@@ -1,4 +1,5 @@
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 
@@ -8,8 +9,10 @@ import { store } from './store';
 const App = () => {
   return (
     <Provider store={store}>
-      <Header />
-      <Routes />
+      <BrowserRouter>
+        <Header />
+        <Routes />
+      </BrowserRouter>
     </Provider>
   );
 }

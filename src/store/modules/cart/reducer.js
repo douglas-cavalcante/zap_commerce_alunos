@@ -1,19 +1,24 @@
 const INITIAL_STATE = {
-  items: []
+  items: [
+    
+  ]
 }
 
 const cart = (state = INITIAL_STATE, action) => {
-  
   switch (action.type) {
+    
     case 'ADD_BOOK_TO_CART':
+
+    console.log(state)
 
       const { book } = action.payload
 
       return {
         ...state,
-        items: {
+        items: [
+          ...state.items,
           book
-        }
+        ],
       }
 
     default:
