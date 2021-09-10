@@ -3,9 +3,10 @@ import { useSelector } from "react-redux";
 const Cart = () => {
 
   const cart = useSelector(state => state.cart.items);
+
   const total = cart.reduce((valorAntigo, valorAtual) => {
     return valorAntigo + valorAtual.price
-  }, 0)
+  }, 0);
 
   return (
     <div className="container">
