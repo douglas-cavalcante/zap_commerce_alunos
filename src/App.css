@@ -128,3 +128,8 @@
   height: 100px;
 }
 
+.action-button {
+  background: none;
+  border: 0;
+  padding: 6px;
+}

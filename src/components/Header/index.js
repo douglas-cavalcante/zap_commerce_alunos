@@ -6,6 +6,8 @@ const Qtd = () => {
 
   const quantity = useSelector((state) => state.cart.items.length);
 
+  console.log(quantity)
+
   return (
     <span onClick={() => history.push('/cart')}>{quantity} produtos</span>
   );
