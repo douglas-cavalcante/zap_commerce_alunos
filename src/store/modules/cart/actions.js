@@ -9,6 +9,15 @@ export const addProductToCart = (book) => {
   }
 }
 
+export const removeBook = (id) => {
+  return {
+    type: 'REMOVE_BOOK_TO_CART',
+    payload: {
+      id
+    }
+  }
+}
+
 export const updateAmout = (id, amount) => {
   console.log('ENTREI AQUI')
   return {

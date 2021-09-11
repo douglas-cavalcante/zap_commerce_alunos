@@ -5,7 +5,7 @@ import {
   MdRemoveCircleOutline
 } from 'react-icons/md';
 
-import { updateAmout } from "../../store/modules/cart/actions";
+import { removeBook, updateAmout } from "../../store/modules/cart/actions";
 import { formatPrice } from "../../utils";
 
 const Cart = () => {
@@ -59,6 +59,8 @@ const Cart = () => {
 
                 </td>
                 <td> {formatPrice(item.book.price * item.amount)}</td>
+
+                <td><button onClick={() => dispatch(removeBook(item.book.id))}>Remover</button></td>
               </tr>
             ))
           }

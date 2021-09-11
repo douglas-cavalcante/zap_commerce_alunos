@@ -1,3 +1,5 @@
+import { addProductToCart } from "./actions"
+
 const INITIAL_STATE = {
   items: [
   ]
@@ -47,7 +49,7 @@ const cart = (state = INITIAL_STATE, action) => {
     case 'UPDATE_BOOK_AMOUNT': {
       console.log(action.payload)
 
-      
+
 
       const newItems = state.items.map(item => {
         if (item.book.id === action.payload.id) {
@@ -66,6 +68,18 @@ const cart = (state = INITIAL_STATE, action) => {
 
     }
 
+    case 'REMOVE_BOOK_TO_CART': {
+      console.log('entreiii')
+      const { id } = action.payload
+
+      const newItems = state.items.filter(item => item.book.id !== id)
+  
+      return {
+        ...state,
+        items: newItems
+      }
+
+    }
     default:
       return state
   }
